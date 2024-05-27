@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobilestore.Store"
+             Title="Store">
+    
+    <ScrollView BackgroundColor="Red">
+
+        <StackLayout  BackgroundColor="White" Padding="40" Margin="20">
+
+            <StackLayout Orientation="Horizontal">
+
+
+                <StackLayout Orientation="Vertical"  Padding="40" Margin="20">
+                    <Label Text="CPU" FontAttributes="Bold" FontSize="29"/>
+
+                    <RadioButton 
+                             x:Name="rbcorei3"
+                             Content="Core i3"
+                             Scale="1.2"
+                             CheckedChanged="rbcorei3_CheckedChanged"
+                             />
+                    <RadioButton 
+                          x:Name="rbcorei5"
+                             Content="Core i5"
+                             Scale="1.2"
+                             CheckedChanged="rbcorei5_CheckedChanged"
+                             />
+                    <RadioButton 
+                             x:Name="rbcorei7"
+                             Content="Core i7"
+                             Scale="1.2"
+                             CheckedChanged="rbcorei7_CheckedChanged"
+                             />
+                    <RadioButton 
+                             x:Name="rbcorei9"
+                             Content="Core i9"
+                             Scale="1.2"
+                             CheckedChanged="rbcorei9_CheckedChanged"
+                             />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"  Padding="40" Margin="20" HorizontalOptions="EndAndExpand">
+
+                    <Label Text="Storage" FontAttributes="Bold" FontSize="29"/>
+
+                    <RadioButton 
+                           x:Name="rbhdd"
+                             Content="HDD"
+                             Scale="1.2"
+                             CheckedChanged="rbhdd_CheckedChanged"
+                             />
+                    <RadioButton 
+                             Content="SSD"
+                           x:Name="rbssd"
+                             Scale="1.2"
+                             CheckedChanged="rbssd_CheckedChanged"
+                             />
+                </StackLayout>
+
+
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" >
+
+                <Label Text="Monitor"
+                   FontAttributes="Bold"
+                   FontSize="29"/>
+
+                <RadioButton 
+                             Content="Phillips"
+                             Scale="1.2"
+                     CheckedChanged="rbphillips_CheckedChanged"
+                               x:Name="rbphillips"/>
+                <RadioButton 
+                             Content="NEC"
+                             Scale="1.2"
+                            x:Name="rbnec"
+                     CheckedChanged="rbnec_CheckedChanged"
+                     />
+                <RadioButton 
+                             Content="HP"
+                               x:Name="rbhp"
+                             Scale="1.2"
+                     CheckedChanged="rbhp_CheckedChanged"
+                     />
+            </StackLayout>
+
+            <Label 
+                x:Name="price"
+                Text="Price"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

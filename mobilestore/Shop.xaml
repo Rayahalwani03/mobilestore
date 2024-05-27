@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobilestore.Shop"
+             Title="Shop">
+    <ScrollView BackgroundColor="Red">
+        <StackLayout  Orientation="Vertical"
+                  BackgroundColor="White"
+                  Padding="40" Margin="20" >
+
+            <StackLayout WidthRequest="190" 
+                     HorizontalOptions="Center">
+
+                <Label 
+                Text="Memory Size GB" 
+                   FontAttributes="Bold" 
+                FontSize="20"/>
+
+                <StackLayout  
+                HorizontalOptions="Center" 
+                Orientation="Horizontal">
+
+                    <Button Text="-" 
+                        FontSize="20" 
+                        x:Name="Memory_minus"
+                        WidthRequest="40"
+                        HeightRequest="40"
+                            Clicked="Memory_minus_Clicked"
+                            />
+
+                    <Entry IsEnabled="False" 
+                           Text="0"
+                           x:Name="MemoryValue"
+                           />
+
+                    <Button Text="+" 
+                        FontSize="20" 
+                        x:Name="Memory_plus"
+                        WidthRequest="40"
+                        HeightRequest="40"
+                            Clicked="Memory_plus_Clicked"
+                            />
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout WidthRequest="170" 
+                     HorizontalOptions="Center">
+
+                <Label Text="Storage Size GB" 
+                   FontAttributes="Bold" 
+                   FontSize="20" />
+
+                <StackLayout  
+                HorizontalOptions="Center" 
+                Orientation="Horizontal">
+
+                    <Button Text="-"   
+                        FontSize="20" 
+                        x:Name="Storage_minus" 
+                        WidthRequest="40"
+                        HeightRequest="40"
+                            Clicked="Storage_minus_Clicked"
+                            />
+
+                    <Entry IsEnabled="False"
+                           Text="0"
+                           />
+
+                    <Button Text="+" 
+                         FontSize="20"
+                        x:Name="Storage_plus" 
+                        WidthRequest="40"
+                        HeightRequest="40"
+                            Clicked="Storage_plus_Clicked"
+                            />
+
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout WidthRequest="170" 
+                     HorizontalOptions="Center">
+
+                <Label Text="Monitor Size GB"    
+                   FontAttributes="Bold" 
+                   FontSize="20"/>
+
+                <StackLayout
+                HorizontalOptions="Center" 
+                Orientation="Horizontal">
+
+                    <Button Text="-" 
+                        FontSize="20"
+                        x:Name="Monitor_minus" 
+                        WidthRequest="40"
+                        HeightRequest="40"
+                            Clicked="Monitor_minus_Clicked"
+                            />
+
+                    <Entry  IsEnabled="False" Text="0" />
+
+                    <Button Text="+"
+                        FontSize="20"
+                        x:Name="Monitor_plus" 
+                          WidthRequest="40"
+                        HeightRequest="40"
+                            Clicked="Monitor_plus_Clicked"
+                            />
+
+                </StackLayout>
+            </StackLayout>
+
+
+            <Label 
+                HorizontalOptions="Center"
+                x:Name="price1"
+                Text="Price"/>
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
